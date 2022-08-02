@@ -1,0 +1,379 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    font-family: sans-serif;
+    width: 480px;
+    margin: 0 auto;
+}
+.princi{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+li{
+    display: inline-block;
+    position:relative;
+  }
+.menu a{
+    background-color:red;
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content:center;
+
+  }
+.menu li>a:hover{
+    color: rgb(136, 4, 4);
+    background-color: bisque;
+  }
+.menu>li{
+    float: inline-start;
+  text-align:center
+}
+
+.contacto>a{
+    background-color:red;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    position:relative;
+}
+.contacto>a:hover{
+    color: rgb(136, 4, 4);
+    background-color: bisque;
+}
+footer{
+    list-style: none;
+    padding: 10px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+.inicio{
+    color:rgb(3, 3, 3);
+}
+fieldset{
+    background-color: grey;
+}
+legend{
+    color: white;
+    margin-left: 5px;
+}
+.formu{
+    background-color:grey;
+}
+.formul{
+    list-style: none;
+    padding: 10px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+.volver>a{
+    background-color:grey;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+}
+.volver>a:hover{
+    color: black;
+    background-color: #eaeaea;
+}
+.fondo{
+    background-color: rgba(179, 178, 178, 0.705);
+}
+body{
+    background-color: rgb(136, 4, 4);
+}
+.imgm, .imgn, .imgd, .imgh{
+    margin: 50px 90px 10px 90px;
+    text-align: center;
+}
+table{
+    background-color: white;
+    min-width: 700px;
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+}
+h1>a{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+h1>a:hover{
+   color: rgb(255, 196, 196);
+}
+th{
+    color: rgb(136, 4, 4);
+}
+td{
+    color: red;
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(136, 4, 4);
+    text-align: center;
+}
+.talles{
+color: rgb(136, 4, 4);
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+.imagenes{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+.img1{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    
+}
+.imagenes2{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+.poli{
+    background-color: rgb(255, 196, 196);
+}
+.politics{
+    background-color: bisque;
+    margin: 50px;
+    padding: 50px;
+    border: 3px rgb(136, 4, 4) solid;
+    box-sizing: border-box;
+} 
+h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(136, 4, 4);
+}
+.np{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:rgb(136, 4, 4);
+}
+p{
+    color: rgb(136, 4, 4);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.poly{
+    list-style: none;
+    padding: 10px;
+    background-color:rgb(255, 196, 196);
+    display: flex;
+    justify-content: center;
+}
+.volver2>a{
+    background-color:rgb(136, 4, 4);
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+}
+.volver2>a:hover{
+    color: rgb(136, 4, 4);
+    background-color: bisque;
+}
+.contenedor{
+    background-color: whitesmoke;
+    width: 98%;
+    border: solid 3px red;
+    margin: 20px auto;
+    padding: 0.5rem;
+    height: 920px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    grid-template-areas: 
+    "imagenes imagenes imagenes"
+    "imagenes2 imagenes2 imagenes2";
+}
+.imagenes{
+    grid-area: imagenes;
+}
+.imagenes2{
+    grid-area: imagenes2;
+}
+.fondo1{
+    margin: 20px auto;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    " header header header"
+    " nav nav nav"
+    " main main main"
+    " main main main"
+    " main main main"
+    " main main main"
+    " main main main"
+    " main main main"
+    " main main main"
+    " main main main"
+    " main main main"
+    " footer footer footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+.princi{
+    grid-area: nav;
+}
+.contenedor{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+main{
+    padding: 10px;
+    background-color:rgb(255, 196, 196);
+    display: flex;
+    display: block;
+    border: red 3px solid;
+    margin: 20px;
+    padding: 1rem;
+}
+@media screen and (max-width: 780px) {
+    .fondo1{
+        margin: 20px;
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 10px;
+        grid-template-areas: 
+        " header header"
+        " nav nav"
+        " main main"
+        " main main"
+        " main main"
+        " main main"
+        " footer footer";
+    }
+    .contenedor{
+        background-color: whitesmoke;
+        width: 98%;
+        border: solid 3px red;
+        height: 720px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
+        gap: 15px;
+        grid-template-areas: 
+        "imagenes imagenes "
+        "imagenes imagenes "
+        "imagenes2 imagenes2 "
+        "imagenes2 imagenes2 ";
+    }
+    .img1{
+        width: 150px;
+        height: 150px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .menu{
+        display: block;
+        position: relative;
+    }
+    body{
+        background-color: crimson;
+    }
+    .imgm, .imgn, .imgd, .imgh{
+        margin: 20px 50px 5px 90px;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+    }
+    table{
+        background-color: white;
+        min-width: 200px;
+        text-align: center;
+    }
+}
+@media screen and (max-height: 780px) {
+    .fondo1{
+        margin: 20px;
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 10px;
+        grid-template-areas: 
+        " header header"
+        " nav nav"
+        " main main"
+        " main main"
+        " main main"
+        " main main"
+        " footer footer";
+    }
+    .contenedor{
+    background-color: whitesmoke;
+    width: 98%;
+    border: solid 3px red;
+    
+    height: 720px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    gap: 15px;
+    grid-template-areas: 
+    "imagenes imagenes "
+    "imagenes imagenes "
+    "imagenes2 imagenes2 "
+    "imagenes2 imagenes2 ";
+    }
+ .img1{
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .menu{
+    display: block;
+    position: relative;
+ }
+ body{
+    background-color: crimson;
+}
+.imgm, .imgn, .imgd, .imgh{
+    margin: 20px 50px 5px 90px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+ table{
+    background-color: white;
+    min-width: 200px;
+    text-align: center;
+ }
+}

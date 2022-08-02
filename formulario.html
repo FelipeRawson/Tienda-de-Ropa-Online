@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./fotos/fotos/contactyo.png">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CONTACTO</title>
+</head>
+
+<body class="fondo">
+    <header>
+        <br>
+        <br>
+       <center><h1 class="inicio"> INICIA SESION</h1></center>
+    </header>
+    <br>
+    <br>
+   <main class="formu"> 
+    <center>
+        <form action="">
+    <fieldset>
+        <legend>Ingresa tus datos</legend>        
+           <div>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" placeholder="Escribe tu nombre">
+           </div>
+           <br>
+           <div>
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" placeholder="Escribe tu apellido">
+           </div>
+           <br>
+           <div>
+            <label for="Email">Escribe tu mail *</label>
+            <input type="Email" name="Email" required>
+           </div>
+           <br>
+           <div>
+                <label for="pass"> Escribe tu contraseña</label>
+                <input type="password" name="pass">
+            </div>
+            <br>
+            <div>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date">
+            </div>
+        
+            <br>
+            <div>
+                <label for="pais">Selecciona tu Nacionalidad</label>
+                <select name="pais" id="">
+                  <option value="arg">Argentina</option>
+                  <option value="uru">Uruguay</option>
+                  <option value="chi">Chile</option>
+                  <option value="bra">Brasil</option>
+                  <option value="otro">Otro</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="genero">Género</label>
+                <input type="radio" name="genero" value="mujer">Mujer
+                <input type="radio" name="genero" value="hombre">Hombre
+                <input type="radio" name="genero" value="otro">Otro
+            </div>
+            <br>
+            <div>
+                <label for="comentario">Dejanos tu comentario</label><br>
+                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribe aqui" ></textarea>
+            </div>
+            <div> Acepta terminos y condiciones</div>
+            <input type="checkbox" name="aceptar" value="1">
+            <br>
+            <div>
+             <input type="submit" value="Enviar Datos">
+             <input type="reset" value="Borrar Datos">
+           </div>
+
+        </form>
+    </fieldset>
+    </center>    
+   </main>
+    <br>
+    <footer class="formul">
+        <center>
+            <h3 class="volver"><a href="./index.html"> VOLVER </a></h3>
+        </center>
+    </footer>
+</body>
+</html>
