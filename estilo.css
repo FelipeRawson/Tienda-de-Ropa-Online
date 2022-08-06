@@ -200,15 +200,14 @@ p{
     background-color: bisque;
 }
 .contenedor{
-    background-color: whitesmoke;
+    background-image: url("./fotos/fondoblanco.webp");
+    background-size:cover;
     width: 98%;
-    border: solid 3px red;
+    border: solid 3px whitesmoke;
     margin: 20px auto;
     padding: 0.5rem;
     height: 920px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     grid-template-areas: 
     "imagenes imagenes imagenes"
@@ -221,11 +220,10 @@ p{
     grid-area: imagenes2;
 }
 .fondo1{
+    background-image: url("./fotos/fondo\ madera.jpg");
     margin: 20px auto;
     padding: 0.5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(12, 1fr);
     grid-template-areas: 
     " header header header"
     " nav nav nav"
@@ -267,8 +265,6 @@ main{
         margin: 20px;
         padding: 0.5rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(7, 1fr);
         gap: 10px;
         grid-template-areas: 
         " header header"
@@ -285,8 +281,6 @@ main{
         border: solid 3px red;
         height: 720px;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr ;
         gap: 15px;
         grid-template-areas: 
         "imagenes imagenes "
@@ -324,8 +318,6 @@ main{
         margin: 20px;
         padding: 0.5rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(7, 1fr);
         gap: 10px;
         grid-template-areas: 
         " header header"
@@ -343,8 +335,6 @@ main{
     
     height: 720px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr ;
     gap: 15px;
     grid-template-areas: 
     "imagenes imagenes "
